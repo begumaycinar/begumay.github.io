@@ -1,0 +1,60 @@
+body {
+    margin: 0;
+    padding: 0;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.makale{
+    width: 250px;
+    height: 200px;
+    background-color: darkgray;
+    display: flex;
+}
+
+iframe{
+    border: 2px solid black;
+    width: 250px;
+    display: block;
+}
+
+.bloglar{
+    display: flex;
+    gap: 20px;
+}
+
+.layout{
+    display: flex;
+}
+
+aside{
+    width: 170px;
+    background-color: cornsilk;
+    flex-shrink: 0;
+    padding-top: 0px;
+}
+
+main{
+    flex: 1;
+    padding: 20px;
+}
+
+a{
+    color: aliceblue;
+    text-decoration: none;
+}
+
+footer{
+    background-color: darkslategray;
+    color: aliceblue;
+    height: 220px;
+    padding: 15px;
+}
+
+header{
+    background-color: cornflowerblue;
+    padding: 0%;
+}

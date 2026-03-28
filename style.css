@@ -1,57 +1,155 @@
-* {
+body{
     margin: 0;
     padding: 0;
 }
 
-html, body{
-    font-size: 62.5%;
-    height: 100%;
+.container{
+    display: grid;
+    min-height: 100vh;
+    background-color: crimson;
+    grid-template-areas: 
+    "header header header"
+    "side main1 main2"
+    "side main1 main2"
+    "foot foot foot";
+    grid-template-columns: 75px 1fr 1fr;
+    grid-template-rows: 100px 1fr 1fr 100px;
 }
 
-aside{
-    height: 100%;
-    position: relative;
+/** HEADER */
+
+:root {
+    --avatar-width: 150px
 }
 
-.anaMenu{
-    background-color: darkslateblue;
-    width: 100%;
-    height: 10rem;
-    position: fixed;
-
-}
-
-.kose{
+.header{
+    grid-area: header;
     background-color: red;
-    display: flow-root;
-    width: 17rem;
-    height: 17rem;
-    border-bottom-right-radius: 150%;
-    position: fixed;
+    display: flex;
+    overflow: visible;
+    position: relative;
+    padding-left: calc(var(--avatar-width) + 1rem);
+    gap: 1rem;
+    padding-right: calc(var(--avatar-width) + 1rem);
+    justify-content: center;
+    align-items: center;
+
+}
+.header div{
+    background-color: blueviolet;
+    border: 3px solid black;
+}
+.avatar{
+    width: var(--avatar-width);
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
 }
 
-.ustParca{
-    width: 12rem;
-    height: 75%;
-    background-color: blueviolet;
-    display: block;
-    bottom: 0;
-    position: absolute;
-    bottom: 0;
-    border-radius: 85px 85px 0 0;
+.logo{
+    height: 95px;
+    width: 95px;
+}
+
+.markaAdi{
+    height: 95px;
+    width: 95px;
+}
+
+.arkadas{
+    height: 95px;
+    flex-grow: 1;
 }
 
 .bildirim{
-    background-color: cadetblue;
-    height: 12rem;
-    width: 13rem;
-    float: right;
+    width: var(--avatar-width);
+    height: 150px;
+    position: absolute;
+    right: 0;
+    top: 0;
 }
 
-.sideBar{
-    height: 100%;
-    width: 5rem;
-    background-color: brown;
-    position: absolute;
-    top: 17rem;
+
+/** SİDEBAR */
+
+
+.sidebar{
+    grid-area: side;
+    background-color: blue;
+}
+
+/** MAİN 1 - SOL TARAF*/
+.main1{
+    display: grid;
+    grid-area: main1;
+    background-color: yellow;
+    padding: 20%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "forum forum"
+    "kutuphane lonca";
+    gap: 5%;
+}
+
+.forum{
+    grid-area: forum;
+    background-color: chocolate;
+    border: 3px solid black;
+}
+
+.kutuphane{
+    grid-area: kutuphane;
+    background-color: chocolate;
+    border: 3px solid black;
+}
+
+.lonca{
+    grid-area: lonca;
+    background-color: chocolate;
+    border: 3px solid black;
+}
+
+
+/** MAİN 2 - SAĞ TARAF*/
+
+.main2{
+    display: grid;
+    grid-area: main2;
+    background-color: yellow;
+    padding: 20%;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+    grid-template-areas:
+    "ciftlik ciftlik"
+    "magaza oyun";
+    gap: 5%;
+}
+
+.ciftlik{
+    grid-area: ciftlik;
+    background-color: aquamarine;
+    border: 3px solid black;
+
+}
+
+.magaza{
+    grid-area: magaza;
+    background-color: aquamarine;
+    border: 3px solid black;
+
+}
+
+.oyun{
+    grid-area: oyun;
+    background-color: aquamarine;
+    border: 3px solid black;
+
+}
+
+
+.footer{
+    grid-area: foot;
+    background-color: green;
 }

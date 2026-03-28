@@ -3,6 +3,10 @@ body{
     padding: 0;
 }
 
+*{
+    box-sizing: border-box;
+}
+
 .container{
     display: grid;
     min-height: 100vh;
@@ -68,6 +72,7 @@ body{
     position: absolute;
     right: 0;
     top: 0;
+
 }
 
 
@@ -82,9 +87,10 @@ body{
 /** MAİN 1 - SOL TARAF*/
 .main1{
     display: grid;
+    place-content: center;
     grid-area: main1;
     background-color: yellow;
-    padding: 20%;
+    padding: 80px;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
@@ -97,18 +103,21 @@ body{
     grid-area: forum;
     background-color: chocolate;
     border: 3px solid black;
+    aspect-ratio: 2 / 1;
 }
 
 .kutuphane{
     grid-area: kutuphane;
     background-color: chocolate;
     border: 3px solid black;
+    aspect-ratio: 1 / 1;
 }
 
 .lonca{
     grid-area: lonca;
     background-color: chocolate;
     border: 3px solid black;
+    aspect-ratio: 1 / 1;
 }
 
 
@@ -116,9 +125,10 @@ body{
 
 .main2{
     display: grid;
+    place-content: center;
     grid-area: main2;
+    padding: 80px;
     background-color: yellow;
-    padding: 20%;
     grid-template-columns: 1fr 1fr;
     grid-template-rows: 1fr 1fr;
     grid-template-areas:
@@ -131,25 +141,103 @@ body{
     grid-area: ciftlik;
     background-color: aquamarine;
     border: 3px solid black;
-
+    aspect-ratio: 2 / 1;
 }
 
 .magaza{
     grid-area: magaza;
     background-color: aquamarine;
     border: 3px solid black;
-
+    aspect-ratio: 1 / 1;
 }
 
 .oyun{
     grid-area: oyun;
     background-color: aquamarine;
     border: 3px solid black;
-
+    aspect-ratio: 1 / 1;
 }
 
 
 .footer{
     grid-area: foot;
     background-color: green;
+}
+
+@media(max-width: 680px) {
+    .container{
+        grid-template-columns: 50px 1fr;
+        grid-template-rows: 75px 1fr 1fr 100px;
+        grid-template-areas: 
+        "header header"
+        "side main1"
+        "side main2"
+        "foot foot";
+    }
+
+    .header{
+        padding-left: calc(var(--avatar-width) + 0.5rem);
+        gap: 0.5rem;
+        padding-right: calc(var(--avatar-width) + 0.5rem);
+
+    }
+
+    .markaAdi{
+        display: none;
+    }
+
+    :root {
+    --avatar-width: 100px
+    }
+
+    .avatar{
+        width: var(--avatar-width);
+        height: 100px;
+
+    }
+
+    .logo{
+        height: 75px;
+        width: 75px;
+    }
+
+    .arkadas{
+        height: 75px;
+    }
+
+    .bildirim{
+        width: var(--avatar-width);
+        height: 100px;
+    }
+
+    .main1, .main2{
+        padding: 9%
+    }
+}
+
+@media (max-width: 400px){
+    .header{
+        padding-left: calc(var(--avatar-width) + 0.3rem);
+        align-items: flex-start ;
+        justify-content: flex-start;
+    }
+    .arkadas{
+        display: none;
+    }
+    .logo{
+        height: 75px;
+        width: 75px;
+    }
+
+    .avatar{
+        width: 90px;
+        height: 90px;
+
+    }
+
+    .bildirim{
+        width: 90px;
+        height: 90px;
+    }
+
 }

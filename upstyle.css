@@ -1,0 +1,28 @@
+body, *{
+    margin: 0;
+    padding: 0;
+}
+
+.container{
+    width: 100%;
+    min-height: 100vh;
+    background-image: linear-gradient(crimson, rgb(113, 3, 25));
+}
+
+.geri{
+    background-color: rgb(254, 255, 255);
+    color: #333;
+    text-decoration: none;
+    font-size: 32px;
+    padding: 15px;
+    margin: 15px;
+    border: 3px solid #333;
+    border-radius: 10px;
+    transition: all .2s ease;
+}
+
+.geri:hover{
+    background-color: rgba(254, 255, 255, 0.8);
+    padding: 17px;
+    box-shadow: 1px 1px 5px black;
+}

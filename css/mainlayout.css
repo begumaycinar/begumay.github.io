@@ -154,6 +154,7 @@
         justify-content: center;
         grid-template-columns: repeat(2, minmax(120px, 12em));
         gap: 1rem;
+        padding-top: 4rem;
     }
 
     .arkadas{

@@ -1,0 +1,21 @@
+body{
+    margin: 0;
+    padding: 0;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+
+
+.secenek{
+    text-decoration: none;
+    font-size: 1.5em;
+    cursor: pointer;
+}
+
+.kutucuk-1{
+    background-color: crimson;
+    border: 3px solid black;
+}

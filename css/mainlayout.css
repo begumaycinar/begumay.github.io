@@ -1,0 +1,169 @@
+.container {
+    display: grid;
+    min-height: 100vh;
+    background-color: crimson;
+    grid-template-areas: 
+        "header header"
+        "side ana"
+        "foot foot";
+    grid-template-columns: 75px 1fr;
+    grid-template-rows: 100px auto 100px;
+}
+
+
+/** HEADER */
+
+:root {
+    --avatar-width: 150px
+}
+
+.header{
+    grid-area: header;
+    background-color: blue;
+    display: flex;
+    overflow: visible;
+    position: relative;
+    padding-left: calc(var(--avatar-width) + 1rem);
+    gap: 1rem;
+    padding-right: calc(var(--avatar-width) + 1rem);
+    justify-content: center;
+    align-items: center;
+
+}
+.header div{
+    background-color: blueviolet;
+    border: 3px solid black;
+}
+.avatar{
+    width: var(--avatar-width);
+    height: 150px;
+    position: absolute;
+    left: 0;
+    top: 0;
+}
+
+.logo{
+    height: 95px;
+    width: 95px;
+    flex-shrink: 0;
+}
+
+.markaAdi{
+    height: 95px;
+    width: 95px;
+}
+
+.arkadas{
+    height: 95px;
+    flex-grow: 1;
+}
+
+.bildirim{
+    width: var(--avatar-width);
+    height: 150px;
+    position: absolute;
+    right: 0;
+    top: 0;
+
+}
+
+
+/** SİDEBAR */
+
+
+.sidebar{
+    grid-area: side;
+    background-color: blue;
+}
+
+/** Main*/
+
+.ana {
+    grid-area: ana;
+    background-image: url(../images/anaArkaplan.jpg);
+    background-position: center;
+    background-size: cover;
+    width: 100%;
+    display: grid;
+    grid-template-areas:
+    "forum forum ciftlik ciftlik"
+    "blog makale oyun magaza";
+    grid-template-columns: repeat(4, minmax(120px, 12em));
+    gap: 2rem;
+    padding: 1rem;
+    box-sizing: border-box;
+    justify-content: center;
+    align-content: center;
+}
+
+.forum {
+    grid-area: forum;
+    background-color: lightblue;
+    aspect-ratio: 2 / 1;
+    width: 100%;
+}
+
+.blog {
+    grid-area: blog;
+    background-color: lightcoral;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+.makale {
+    grid-area: makale;
+    background-color: lightcyan;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+.ciftlik {
+    grid-area: ciftlik;
+    background-color: lightgoldenrodyellow;
+    aspect-ratio: 2 / 1;
+    width: 100%;
+}
+
+.oyun {
+    grid-area: oyun;
+    background-color: lightgreen;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+.magaza {
+    grid-area: magaza;
+    background-color: lightsalmon;
+    aspect-ratio: 1 / 1;
+    width: 100%;
+}
+
+.footer{
+    grid-area: foot;
+    background-color: green;
+}
+
+
+@media (max-width: 650px){
+    .ana{
+        grid-template-areas: 
+        "forum forum"
+        "ciftlik ciftlik"
+        "blog makale"
+        "oyun magaza";
+        justify-content: center;
+        grid-template-columns: repeat(2, minmax(120px, 12em));
+        gap: 1rem;
+    }
+
+    .arkadas{
+        display: none;
+    }
+
+}
+
+@media (max-width: 450px){
+    .markaAdi{
+        display: none;
+    }
+}

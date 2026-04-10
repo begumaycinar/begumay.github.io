@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../components/footer.html")
+  fetch("/begumay/components/footer.html")
     .then(response => {
       if (!response.ok) throw new Error("Footer yüklenemedi");
       return response.text();

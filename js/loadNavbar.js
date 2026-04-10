@@ -1,7 +1,5 @@
-
-
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("./components/navbar.html")
+  fetch("/begumay/components/navbar.html")
     .then((response) => {
       console.log("fetch status:", response.status);
       if (!response.ok) throw new Error("Navbar yüklenemedi: " + response.status);

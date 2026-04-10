@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("../components/header.html") // index.html ile aynı root
+  fetch("/begumay/components/header.html") // index.html ile aynı root
     .then(response => {
       if (!response.ok) throw new Error("Header yüklenemedi");
       return response.text();

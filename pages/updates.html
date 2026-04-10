@@ -3,22 +3,62 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../css/mainlayout.css">
     <link rel="stylesheet" href="../css/upstyle.css">
-    <title>Güncellemeler</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <title>Ee, şey</title>
 </head>
 <body>
     <div class="container">
-        <h1 class="baslik">Güncellemeler</h1>
-        <ul>
-            <li>header, sidebar, main ve footer eklendi</li>
-            <li>şekil verildi ve sınırları görmek için renk eklendi</li>
-            <li>headerdaki elementler konumlandırıldı</li>
-            <li>ana iki bölümdeki elementler konumlandırıldı</li>
-            <li>responsive tasarım yapıldı</li>
-            <li>gelişmeler tuşu eklendi</li>
-            <li></li>
-        </ul>
-        <a href="index.html" class="geri">Geri dönmek için tıklayın</a>
+
+        <header class="header" id="header-container">
+            <script src="../js/loadHeader.js"></script>
+        </header>
+
+        <aside id="sidebar-container" class="sidebar-a">
+          <script src="../js/loadSidebar.js"></script>
+    </aside>
+
+        <nav class="navbar-a">
+            <input type="checkbox" id="navbar-etkin">
+            <label for="navbar-etkin" class="navbar-ac">
+                <svg class="nav-acik" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
+
+            <label for="navbar-etkin" id="overlasy"></label>
+            <div class="nav-links"> 
+                <label for="navbar-etkin" class="navbar-kapat">
+                    <svg class="nav-kapali" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
+
+                <a class="anaSayfa" href="../index.html">Ana Sayfa</a>
+                <a href="">Hakkında</a>
+                <a class="guncellemeler-nav" href="updates.html">Güncellemeler</a>
+                <a href="">İletişim</a>
+                <a href="">Giriş Yap</a>
+            </div>
+        </nav>
+    
+    <main class="ana">
+        <div class="guncellemeler">
+        <h1 class="guncellemeBaslik">Güncellemeler</h1>
+        <h2 class="guncellemeYazi">Neler yeni?</h2>
+        <h3 class="surum">0.0.1</h3>
+        <p class="guncellemeP">
+        Site daha emeklemeye bile başlamadı, adı bile belli değil, ana hattını oluşturacak bir özelliği de yok. <br>
+        Yine de burası boş kalmasın diye ekledim.
+        </p>
+    </div>
+    </main>
+
+    <footer id="footer-container" class="footer">
+        <script src="../js/loadFooter.js"></script>
+    </footer>
+
     </div>
 </body>
 </html>

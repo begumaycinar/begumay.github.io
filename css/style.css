@@ -5,17 +5,331 @@ body{
 
 *{
     box-sizing: border-box;
+    font-family: "Oswald";
 }
 
-
-
-.secenek{
-    text-decoration: none;
-    font-size: 1.5em;
-    cursor: pointer;
+.main{
+    background-image: radial-gradient(rgba(252, 34, 34, 0.4), rgba(0, 0, 0, .4)), url(../images/anaArkaplan.png);
+    background-position: center;
+    background-size: cover;
 }
 
-.kutucuk-1{
-    background-color: crimson;
+/** HEADER */
+
+.header{
+    display: flex;
+    gap: 2rem;
+    width: 100%;
+    background-image: radial-gradient(rgba(176, 176, 176, 0.4), rgba(0, 0, 0, 0.8)), url(../images/headerBG.png);
+    background-size: contain;
+    border: 2px solid black;
+}
+
+.avatar{
+    width: 150px;
+    height: 150px;
+    background-image: url(../images/avatarArka.jpg);
+    background-size: cover;
+    z-index: 11;
     border: 3px solid black;
+    box-shadow: 0px 0px 5px black;
+}
+
+.logo{
+    width: 200px;
+    height: 90px;
+    background-color: blue;
+    border: 3px solid black;
+    box-shadow: 0px 0px 5px black;
+}
+
+.arkadas{
+    flex-grow: 1;
+    height: 90px;
+    background-color: blue;
+    border: 3px solid black;
+    box-shadow: 0px 0px 5px black;
+}
+
+.bildirim{
+    width: 150px;
+    height: 150px;
+    background-color: blue;
+    z-index: 11;
+    margin-right: auto;
+    border: 3px solid black;
+    right: 0;
+    background-image: url(../images/bildirim.jpg);
+    background-size: contain;
+    box-shadow: 0px 0px 5px black;
+
+}
+
+@media (max-width: 680px){
+    .logo{
+        width: 90px;
+    }
+}
+
+@media (max-width: 575px){
+    .arkadas{
+        background-color: transparent;
+        border: transparent;
+        box-shadow: none;
+    }
+
+}
+
+
+/**SİDEBAR*/
+
+.sidebar{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    grid-area: side;
+    background-color: blue;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(176, 29, 29, 0.3), rgba(0, 0, 0, 0.4)), url(../images/sidebar.png);
+    background-position: center;
+    background-size: contain;
+    border-right: 4px solid black;
+    position: relative;
+}
+
+
+/* HAFTA PARENTI */
+.side-links{
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    z-index: 12;
+    width: 600px;
+    transition: 1s ease;
+    background-image: radial-gradient(rgba(173, 173, 173, 0.214), rgba(0, 0, 0, 0.564)), url(../images/sidebarBG.png);
+    background-size: cover;
+    align-items: center;
+    justify-content: center;
+    gap: 30px;
+
+    transform: translate(-100%);
+}
+
+.sideGorsel { 
+    width: 70px;
+    height: 70px;
+    filter: drop-shadow(0px 0px 10px rgba(255, 255, 255, 0.7));
+}
+
+.kapali{
+    position: absolute;
+    right: 10px;       /* sağdan boşluk */
+    top: 50%;          /* dikey ortalama */
+    transform: translateY(-50%) rotate(270deg);
+    display: block;
+    width: 40px;
+    height: auto;
+    filter: drop-shadow(0px 0px 15px rgba(255, 255, 255, 0.7));
+}
+
+
+.acik{
+    display: block;
+    width: 40px;
+    height: auto;
+    transform: rotate(90deg); 
+}
+
+#side-etkin{
+    display: none;
+}
+
+#side-etkin:checked ~ .side-links{
+    display: flex;
+    left: 0;
+
+    transform: translate(0%);
+}
+
+
+.hafta-a{
+    background-color: chartreuse;
+    width: 500px;
+    height: 200px;
+}
+
+.hafta-b{
+    background-color: blue;
+    width: 360px;
+    height: 150px;
+}
+
+.hafta-c{
+    background-color: hotpink;
+    width: 120px;
+    height: 150px;
+}
+
+.hafta-d{
+    background-color:cornflowerblue;
+    width: 500px;
+    height: 150px;
+}
+
+
+.hafta-row{
+    display: flex;
+    gap: 20px; /* aralarına boşluk */
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 650px) {
+    .side-links{
+        width: 400px;
+        gap: 15px;
+    }
+
+    .hafta-a{
+        width: 300px;
+        height: 150px;
+    }
+
+    .hafta-b{
+        width: 180px;
+        height: 100px;
+    }
+
+    .hafta-c{
+        width: 100px;
+        height: 100px;
+    }
+
+    .hafta-d{
+        width: 300px;
+        height: 100px;
+    }
+
+}
+
+
+
+/** NAVBAR */
+
+
+:root{
+    --color-1: rgb(20, 20, 20);
+    --text-color: white;
+    --accent-color: rgb(174, 18, 18);
+}
+
+
+.navbar-a{
+    grid-area: nav;
+    background-color: var(--color-1);
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    padding-inline: 150px;
+}
+
+.nav-links{
+    height: 100%;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+
+}
+
+.navbar-a a {
+    height: 100%;
+    padding: 0 20px;
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+    color: var(--text-color);
+    transition: .3s ease;
+}
+
+.navbar-a a:hover{
+    background-color: var(--accent-color);
+}
+
+.anaSayfa {
+    margin-right: auto;
+}
+
+.navbar-a svg{
+    fill: var(--text-color);
+}
+
+#navbar-etkin{
+    display: none;
+}
+
+.navbar-kapat, .navbar-ac{
+    display: none;
+    padding: 0 20px;
+}
+
+@media (max-width: 790px){
+
+    .nav-links { 
+        flex-direction: column;
+        align-items: flex-start;
+        position: fixed;
+        top: 0;
+        right: -100%;
+        z-index: 11;
+        width: 300px;
+        background-color: var(--color-1);
+        box-shadow: -5px 0px rgba(0,0,0, .25);
+        transition: 1s ease-in-out;
+    }
+
+    .navbar-a a{
+        box-sizing: border-box;
+        height: auto; 
+        width: 100%; 
+        padding: 20px 30px; 
+        justify-content: flex-start; 
+    } 
+    
+    .navbar-kapat, .navbar-ac{ 
+        display: block; 
+    } 
+    
+    #navbar-etkin:checked ~ .nav-links{ 
+        right: 0; 
+    } 
+    
+    #navbar-etkin:checked ~ #overlay{ 
+        height: 100%; 
+        width: 100%; 
+        position: fixed; 
+        top: 0; 
+        left: 0; 
+        z-index: 9; 
+    
+    }
+}
+
+
+
+/**FOOTER*/
+
+.footer-comp {
+    grid-area: foot;
+    background-color: #171515;
+    color: white;
+    padding: 10px;
+}
+
+.footerYazi{
+    color: rgb(129, 129, 129);
+    margin: 1px;
+    font-size: 14px;
 }

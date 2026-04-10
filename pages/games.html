@@ -11,32 +11,38 @@
 <body>
     <div class="container">
 
-        <header class="header">
+    <header class="header" id="header-container">
+        <script src="../js/loadHeader.js"></script>
+    </header>
 
-            <div class="avatar">avatar</div>
 
-            <div class="logo">logo</div>
+        <nav class="navbar-a">
+            <input type="checkbox" id="navbar-etkin">
+            <label for="navbar-etkin" class="navbar-ac">
+                <svg class="nav-acik" xmlns="http://www.w3.org/2000/svg" height="32px" viewBox="0 -960 960 960" width="32px" fill="#e3e3e3"><path d="M120-240v-80h720v80H120Zm0-200v-80h720v80H120Zm0-200v-80h720v80H120Z"/></svg>
+            </label>
 
-            <div class="haberler">haberler</div>
-            
-            <div class="bildirim">bildirim</div>
+            <label for="navbar-etkin" id="overlasy"></label>
+            <div class="nav-links"> 
+                <label for="navbar-etkin" class="navbar-kapat">
+                    <svg class="nav-kapali" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
+                </label>
 
-        </header>
-
-        <nav class="navbar">
-            <ul>
-                <li><a href="/begumay.github.io/index.html">Ana Sayfa</a></li>
-            </ul>
+                <a  class="anaSayfa" href="../index.html">Ana Sayfa</a>
+                <a href="">Hakkında</a>
+                <a href="updates.html">Güncellemeler</a>
+                <a href="">İletişim</a>
+                <a href="">Giriş Yap</a>
+            </div>
         </nav>
-
-        <aside class="sidebar"></aside>
+        
+        <aside class="sidebar" id="sidebar-container">
+            <script src="../js/loadSidebar.js"></script>
+        </aside>
 
         <section class="main main2">
 
             <div class="kart">
-                <a href="games/sayac.html">Sayaç <br>
-                    (altta görsel olacak)
-                </a>
             </div>
             <div class="kart"></div>
             <div class="kart"></div>
@@ -54,7 +60,9 @@
 
         <section class="highlights"></section>
 
-        <footer class="foote"></footer>
+        <footer class="foote" id="footer-container">
+            <script src="../js/loadFooter.js"></script>
+        </footer>
 
     </div>
 

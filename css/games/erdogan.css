@@ -1,0 +1,73 @@
+.main{
+    padding: 0;
+}
+
+.main2{
+    background-color: whitesmoke;
+    justify-content: center;
+    align-items: center;
+    display: grid;
+    grid-template-areas:
+    "ana"
+    "para" 
+    "urun";
+    grid-template-rows: 250px 60px;
+    grid-template-columns: 1fr;
+}
+
+
+/**ANA BÖLÜM*/
+.anakart{
+    grid-area: ana;
+    margin: 10px;
+    background-color: bisque;
+    height: fit-content;
+    justify-content: center;
+    align-items: center;
+    border: 3px solid black;
+    padding-inline: 60px;
+}
+
+.gorsel{
+    width: 150px;
+    margin-left: 50%;
+    transform: translate(-50%);
+    margin-top: 10px;
+}
+
+.yazi{
+    text-align: center;
+}
+
+/** PARA */
+
+.para{
+    grid-area: para;
+    background-color: rgb(108, 246, 49);
+    color: black;
+    font-size: 40px;
+    height: 100%;
+    text-align: center;
+}
+
+/**ÜRÜN*/
+
+.urun{
+    grid-area: urun;
+    display: flex;
+    flex-wrap: wrap;
+
+}
+
+.kart{
+    background-color: rgb(157, 157, 157);
+    height: 400px;
+    width: 300px;
+    margin: 25px;
+}
+
+.ham{
+    width: 100%;
+    background-color: rgb(206, 206, 206);
+
+}

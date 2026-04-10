@@ -5,60 +5,24 @@
     background-color: crimson;
     grid-template-areas: 
     "header header header"
-    "navbar navbar navbar"
+    "nav nav nav"
     "side ligth main"
     "foot foot foot";
     grid-template-columns:75px 0.25fr 1fr;
-    grid-template-rows: 150px 50px 1fr 200px;
+    grid-template-rows: 100px 50px 1fr auto;
 } 
 
 /** HEADER */
 
 .header{
     grid-area: header;
-    background-color: cornflowerblue;
-    display: flex;
-    gap: 30px;
-    width: 100%;
 }
 
-.header div{
-    background-color: cornsilk;
-    /* border: 3px solid black; */
-}
-
-.avatar {
-    width: 170px;
-    height: 170px;
-    flex-shrink: 0;
-}
-
-.logo{
-    width: 220px;
-    height: 110px;
-    flex-shrink: 0;
-}
-
-
-
-.haberler{
-    height: 110px;
-    width: 100%;
-}
-
-.bildirim{
-    width: 170px;
-    height: 170px;
-    flex-shrink: 0;
-    margin-left: auto;
-}
 
 /** NAVBAR*/ 
 
-.navbar {
-    grid-area: navbar;
-    background-color: chartreuse;
-    text-decoration: none;
+.navbar-a {
+    grid-area: nav;
 }
 
 
@@ -67,7 +31,6 @@
 
 .sidebar {
     grid-area: side;
-    background-color: darkblue;
 }
 
 
@@ -106,12 +69,12 @@
     .container{
     grid-template-areas: 
     "header header"
-    "navbar navbar"
+    "nav nav"
     "side main"
     "side ligth"
     "foot foot";
     grid-template-columns:75px 1fr;
-    grid-template-rows: 120px 50px 1fr 1fr 200px;
+    grid-template-rows: 100px 50px 1fr 1fr 200px;
     }
 
     .avatar{

@@ -1,18 +1,15 @@
 .main2 {
     grid-area: main;
-    background-color: deeppink;
     display: flex;
     gap: 50px;
-    padding: 50px;
     flex-wrap: wrap;
 }
 
 .kart{
-    width: 25%;
-    aspect-ratio: 1 / 1;
+    flex-shrink: 0;
+    display: flex;
+    height: 200px;
+    width: 200px;
     background-color:cornflowerblue;
-    text-align: center;
-    font-size: 4em;
-    flex-grow: 1;
-
+    font-size: 40pt;
 }

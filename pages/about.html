@@ -3,18 +3,25 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="../css/games.css">
-    <link rel="stylesheet" href="../css/gamepage.css">
+    <link rel="stylesheet" href="../css/mainlayout.css">
+    <link rel="stylesheet" href="../css/about.css">
     <link rel="stylesheet" href="../css/style.css">
-    <title>Document</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Jersey+10&family=Oswald:wght@200..700&family=Roboto:ital,wght@0,300;1,300&display=swap" rel="stylesheet">
+    <title>Ee, şey</title>
 </head>
 <body>
     <div class="container">
 
-    <header class="header" id="header-container">
-        <script src="../js/loadHeader.js"></script>
-    </header>
+        <header class="header" id="header-container">
+            <script src="../js/loadHeader.js"></script>
+        </header>
 
+        <aside id="sidebar-container" class="sidebar-a">
+          <script src="../js/loadSidebar.js"></script>
+    </aside>
 
         <nav class="navbar-a">
             <input type="checkbox" id="navbar-etkin">
@@ -28,36 +35,23 @@
                     <svg class="nav-kapali" xmlns="http://www.w3.org/2000/svg" height="24px" viewBox="0 -960 960 960" width="24px" fill="#e3e3e3"><path d="m256-200-56-56 224-224-224-224 56-56 224 224 224-224 56 56-224 224 224 224-56 56-224-224-224 224Z"/></svg>
                 </label>
 
-                <a  class="anaSayfa" href="../index.html">Ana Sayfa</a>
-                <a href="">Hakkında</a>
-                <a href="updates.html">Güncellemeler</a>
+                <a class="anaSayfa" href="../index.html">Ana Sayfa</a>
+                <a href="" class="hakkinda-nav">Hakkında</a>
+                <a class="guncellemeler-nav" href="updates.html">Güncellemeler</a>
                 <a href="">İletişim</a>
                 <a href="">Giriş Yap</a>
             </div>
         </nav>
-        
-        <aside class="sidebar" id="sidebar-container">
-            <script src="../js/loadSidebar.js"></script>
-        </aside>
-
-        <section class="main main2">
-
-            <div class="kart"></div>
-            <div class="kart"></div>
-            <div class="kart"></div>
-            <div class="kart"></div>
-            <div class="kart"></div>
-            <div class="kart"></div>
-
-        </section>
-
-        <section class="highlights"></section>
-
-        <footer class="foote" id="footer-container">
-            <script src="../js/loadFooter.js"></script>
-        </footer>
+    
+    <div class="ana hakkinda">
+            <h1 class="hakkindaBaslik">Hakkımızda</h1>
 
     </div>
 
+    <footer id="footer-container" class="footer">
+        <script src="../js/loadFooter.js"></script>
+    </footer>
+
+    </div>
 </body>
 </html>

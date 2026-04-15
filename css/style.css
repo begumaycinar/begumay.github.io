@@ -20,7 +20,7 @@ body{
     display: flex;
     gap: 2rem;
     width: 100%;
-    background-image: radial-gradient(rgba(176, 176, 176, 0.4), rgba(0, 0, 0, 0.8)), url(../images/headerBG.png);
+    background-image: radial-gradient(rgba(24, 70, 255, 0.4), rgb(0, 0, 0)), url(../images/headerBG.png);
     background-size: contain;
     border: 2px solid black;
 }

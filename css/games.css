@@ -43,6 +43,8 @@
 }
 
 
+
+
 /** HİGHLİGHTS*/ 
 
 .highlights {
@@ -59,11 +61,6 @@
 
 
 /** RESPONSİVE */ 
-@media (max-width: 750px){
-    .haberler{
-        display: none;
-    }
-}
 
 @media (max-width: 620px) {
     .container{

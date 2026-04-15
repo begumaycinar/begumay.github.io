@@ -1,0 +1,43 @@
+.guncellemeler-nav, .anaSayfa{
+    text-decoration: none !important;
+}
+
+.hakkinda{
+    display: block;
+    height: 100%;
+    width: 100%;
+}
+
+
+.hakkinda-nav{
+    text-decoration: rgb(174, 18, 18) underline 3.5px !important;
+
+}
+
+.hakkindaBaslik{
+    font-size: 60px;
+    background: linear-gradient(to left, rgb(255, 186, 186), rgb(157, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+
+}
+
+.hakkindaYazi{
+    font-size: 40px;
+    margin-top: 40px;
+    margin-left: 90px;
+    background: linear-gradient(to left, rgb(255, 186, 186) 75%, rgb(157, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+
+
+.hakkindaP{
+    display: inline-block;
+    background: linear-gradient(to left, rgb(255, 188, 188), rgb(150, 255, 255));
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+    margin-left: 90px;
+    margin-top: 27px;
+
+}

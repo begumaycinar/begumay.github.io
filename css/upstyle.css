@@ -3,31 +3,11 @@ body, *{
     padding: 0;
 }
 
-
-.geri{
-    background-color: rgb(254, 255, 255);
-    color: #333;
-    text-decoration: none;
-    font-size: 32px;
-    padding: 15px;
-    margin: 15px;
-    border: 3px solid #333;
-    border-radius: 10px;
-    transition: all .2s ease;
-}
-
-.geri:hover{
-    background-color: rgba(254, 255, 255, 0.8);
-    padding: 17px;
-    box-shadow: 1px 1px 5px black;
-}
-
 .ana{
     display: block;
     padding: 0;
     margin: 0;
 }
-
 
 .guncellemeler{
     width: 100%;
@@ -53,6 +33,9 @@ body, *{
 
 }
 
+
+
+
 .guncellemeYazi{
     font-size: 40px;
     margin-top: 40px;
@@ -62,23 +45,29 @@ body, *{
     -webkit-text-fill-color: transparent;
 }
 
+
+.wrap{
+    margin-top: 40px;
+}
 .surum{
     background: linear-gradient(to left, rgb(171, 232, 255), rgb(254, 238, 172));
     width: fit-content;
     padding: 3px;
     margin-left: 20px;
+    margin-top: 30px;
     color: #1c1c1c;
     border: 1px solid rgb(36, 36, 36);
     border-radius: 5px;
     display: inline-block;
+    position: absolute;
 }
 
 .guncellemeP{
     display: inline-block;
-        background: linear-gradient(to left, rgb(255, 188, 188), rgb(150, 255, 255));
+    background: linear-gradient(to left, rgb(255, 188, 188), rgb(150, 255, 255));
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
-    margin-top: 20px;
-    margin-left: 15px;
+    margin-left: 90px;
+    margin-top: 27px;
 
 }

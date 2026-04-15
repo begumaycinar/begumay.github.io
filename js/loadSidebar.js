@@ -1,5 +1,5 @@
 document.addEventListener("DOMContentLoaded", () => {
-  fetch("/begumay/components/sidebar.html") // index.html ile aynı root
+  fetch("../components/sidebar.html") // index.html ile aynı root
     .then(response => {
       if (!response.ok) throw new Error("Sidebar yüklenemedi");
       return response.text();

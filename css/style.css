@@ -81,7 +81,7 @@ body{
 }
 
 
-/**SİDEBAR*/
+/**SÄ°DEBAR*/
 
 .sidebar{
     height: 100%;
@@ -125,7 +125,7 @@ body{
 
 .kapali{
     position: absolute;
-    right: 10px;       /* sağdan boşluk */
+    right: 10px;       /* saÄŸdan boÅŸluk */
     top: 50%;          /* dikey ortalama */
     transform: translateY(-50%) rotate(270deg);
     display: block;
@@ -181,7 +181,7 @@ body{
 
 .hafta-row{
     display: flex;
-    gap: 20px; /* aralarına boşluk */
+    gap: 20px; /* aralarÄ±na boÅŸluk */
     align-items: center;
     justify-content: center;
 }
@@ -334,4 +334,16 @@ body{
     color: rgb(129, 129, 129);
     margin: 1px;
     font-size: 14px;
+}
+/* Navbar visibility override */
+.navbar-a .nav-links {
+    display: flex !important;
+}
+
+.navbar-a a {
+    color: #ffffff !important;
+    -webkit-text-fill-color: #ffffff !important;
+    font-size: 18px !important;
+    opacity: 1 !important;
+    visibility: visible !important;
 }

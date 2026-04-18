@@ -1,11 +1,20 @@
-document.addEventListener("DOMContentLoaded", () => {
-  fetch("../components/footer.html")
-    .then(response => {
-      if (!response.ok) throw new Error("Footer yüklenemedi");
-      return response.text();
-    })
-    .then(data => {
+document.addEventListener("DOMContentLoaded", async () => {
+  const candidates = ["./components/footer.html", "../components/footer.html", "../../components/footer.html"];
+
+  for (const candidate of candidates) {
+    try {
+      const response = await fetch(candidate);
+      if (!response.ok) {
+        continue;
+      }
+
+      const data = await response.text();
       document.getElementById("footer-container").innerHTML = data;
-    })
-    .catch(error => console.error(error));
+      return;
+    } catch (error) {
+      console.error(error);
+    }
+  }
+
+  console.error("Footer yuklenemedi");
 });

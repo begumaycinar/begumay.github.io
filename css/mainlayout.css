@@ -33,7 +33,7 @@
     grid-area: nav;
 }
 
-.anaSayfa{
+.main-nav{
     text-decoration: rgb(174, 18, 18) underline 3.5px !important;
 }
 
@@ -64,6 +64,12 @@
     background-color: lightblue;
     aspect-ratio: 2 / .8;
     width: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, .4)), url(../images/forumKapak.jpeg);
+    background-position: top -20px right -30px;
+    background-size: 110%;
+    box-shadow: 0px 0px 4px black;
+    justify-items: center;
+    align-content: center;
 }
 
 .blog {
@@ -71,6 +77,12 @@
     background-color: lightcoral;
     aspect-ratio: 1 / .8;
     width: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, .4)), url(../images/blogKapak.png);
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 3px black;
 }
 
 .makale {
@@ -78,6 +90,13 @@
     background-color: lightcyan;
     aspect-ratio: 1 / .8;
     width: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, .05), rgba(0, 0, 0, .6)), url(../images/kutuphaneKapak.png);
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 4px black;
+
 }
 
 .ciftlik {
@@ -85,6 +104,12 @@
     background-color: lightgoldenrodyellow;
     aspect-ratio: 2 / .8;
     width: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, .05), rgba(0, 0, 0, .6)), url(../images/ciftlikKapak.png);
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 4px black;
 }
 
 .oyun {
@@ -92,6 +117,12 @@
     background-color: lightgreen;
     aspect-ratio: 1 / .8;
     width: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, .05), rgba(0, 0, 0, .6)), url(../images/oyunKapak.png);
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 4px black;
 }
 
 .magaza {
@@ -99,8 +130,28 @@
     background-color: lightsalmon;
     aspect-ratio: 1 / .8;
     width: 100%;
+    background-image: radial-gradient(rgba(255, 255, 255, .05), rgba(0, 0, 0, .6)), url(../images/magazaKapak.png);
+    background-position: center;
+    background-size: cover;
+    justify-items: center;
+    align-content: center;
+    box-shadow: 0px 0px 4px black;
 }
 
+/** BAŞLIKLAR **/
+
+.baslik-ana, .baslik-ana > a{
+    color: white;
+    font-family: "Jersey 10", system-ui;
+    font-size: 4rem;
+    text-shadow: 5px 0px 10px black;
+    font-weight: lighter;
+    text-decoration: none;
+}
+
+.baslik-ana:hover{
+    text-decoration: underline;
+}
 /** FOOTER */
 
 #footer-container{

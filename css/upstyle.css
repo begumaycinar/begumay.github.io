@@ -7,6 +7,11 @@ body, *{
     display: block;
     padding: 0;
     margin: 0;
+    height: 80vh;
+    width: 100%;
+    overflow-y: scroll;
+    scrollbar-color: var(--color-1) transparent;
+    scrollbar-gutter: stable;
 }
 
 .guncellemeler{
@@ -14,11 +19,11 @@ body, *{
     height: 100%;
 }
 
-.anaSayfa{
+.about-nav, .main-nav, .contact-nav, .login-nav{
     text-decoration: none !important;
 }
 
-.guncellemeler-nav{
+.updates-nav{
     text-decoration: rgb(174, 18, 18) underline 3.5px !important;
 }
 
@@ -50,16 +55,16 @@ body, *{
     margin-top: 40px;
 }
 .surum{
-    background: linear-gradient(to left, rgb(171, 232, 255), rgb(254, 238, 172));
+    background: linear-gradient(to left, rgb(171, 232, 255), rgb(254, 172, 172));
     width: fit-content;
-    padding: 3px;
+    padding: 3px 7px;
     margin-left: 20px;
-    margin-top: 30px;
+    margin-top: 34px;
     color: #1c1c1c;
-    border: 1px solid rgb(36, 36, 36);
     border-radius: 5px;
     display: inline-block;
     position: absolute;
+    box-shadow: 0px 0px 3px white;
 }
 
 .guncellemeP{
@@ -69,5 +74,6 @@ body, *{
     -webkit-text-fill-color: transparent;
     margin-left: 90px;
     margin-top: 27px;
+    font-size: 20px;
 
 }

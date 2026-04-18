@@ -20,7 +20,7 @@ body{
     display: flex;
     gap: 2rem;
     width: 100%;
-    background-image: radial-gradient(rgba(24, 70, 255, 0.4), rgb(0, 0, 0)), url(../images/headerBG.png);
+    background-image: radial-gradient(rgba(255, 227, 71, 0.3), rgb(0, 0, 0.1)), url(../images/headerBG.png);
     background-size: contain;
     border: 2px solid black;
 }
@@ -258,7 +258,7 @@ body{
     background-color: var(--accent-color);
 }
 
-.anaSayfa {
+.main-nav {
     margin-right: auto;
 }
 
@@ -275,6 +275,8 @@ body{
     padding: 0 20px;
 }
 
+
+/* responsive */
 @media (max-width: 790px){
 
     .nav-links { 

@@ -12,7 +12,7 @@
 }
 
 
-/** HEADER - poppins fonta göz at!*/
+/** HEADER - poppins fonta gÃƒÂ¶z at!*/
 
 
 .header{
@@ -20,7 +20,7 @@
 
 }
 
-/** SİDEBAR */
+/** SÃ„Â°DEBAR */
 
 .sidebar-a{
     grid-area: side;
@@ -65,8 +65,8 @@
     aspect-ratio: 2 / .8;
     width: 100%;
     background-image: radial-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, .4)), url(../images/forumKapak.jpeg);
-    background-position: top -20px right -30px;
-    background-size: 110%;
+    background-position: center;
+    background-size: 100%;
     box-shadow: 0px 0px 4px black;
     justify-items: center;
     align-content: center;
@@ -138,12 +138,16 @@
     box-shadow: 0px 0px 4px black;
 }
 
-/** BAŞLIKLAR **/
+.ana > div{
+    flex-shrink: 0;
+}
+
+/** BAşlık **/
 
 .baslik-ana, .baslik-ana > a{
     color: white;
     font-family: "Jersey 10", system-ui;
-    font-size: 4rem;
+    font-size: clamp(1.8rem, 10vw, 5rem);
     text-shadow: 5px 0px 10px black;
     font-weight: lighter;
     text-decoration: none;

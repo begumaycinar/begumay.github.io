@@ -26,7 +26,7 @@
 }
 
 
-/** SİDEBAR*/ 
+/** SÃ„Â°DEBAR*/ 
 
 
 .sidebar {
@@ -34,7 +34,7 @@
 }
 
 
-/** MAİN*/ 
+/** MAÃ„Â°N*/ 
 
 .main {
     grid-area: main;
@@ -46,7 +46,7 @@
 
 
 
-/** HİGHLİGHTS*/ 
+/** HÃ„Â°GHLÃ„Â°GHTS*/ 
 
 .highlights {
     grid-area: ligth;
@@ -61,7 +61,7 @@
 }
 
 
-/** RESPONSİVE */ 
+/** RESPONSÃ„Â°VE */ 
 
 @media (max-width: 620px) {
     .container{

@@ -66,7 +66,7 @@
     width: 100%;
     background-image: radial-gradient(rgba(255, 255, 255, 0.05), rgba(0, 0, 0, .4)), url(../images/forumKapak.jpeg);
     background-position: center;
-    background-size: 100%;
+    background-size: cover;
     box-shadow: 0px 0px 4px black;
     justify-items: center;
     align-content: center;
@@ -147,10 +147,11 @@
 .baslik-ana, .baslik-ana > a{
     color: white;
     font-family: "Jersey 10", system-ui;
-    font-size: clamp(1.8rem, 10vw, 5rem);
+    font-size: clamp(1.8rem, 8vw, 4rem);
     text-shadow: 5px 0px 10px black;
     font-weight: lighter;
     text-decoration: none;
+    transform: ;
 }
 
 .baslik-ana:hover{
@@ -184,4 +185,5 @@
         padding: 180px 80px;
         
     }
+
 }

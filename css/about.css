@@ -14,6 +14,7 @@
     overflow-y: scroll;
     scrollbar-color: var(--color-1) transparent;
     scrollbar-gutter: stable;
+    padding-top: 0;
 }
 
 .ana{
@@ -26,37 +27,9 @@
     text-decoration: rgb(174, 18, 18) underline 3.5px !important;
 }
 
-.hakkindaBaslik{
-    font-size: 60px;
-    margin-inline: 90px;
-    margin-bottom: 0px;
-
-    background: linear-gradient(to left, rgb(255, 186, 186), rgb(157, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.hakkindaYazi{
-    font-size: 40px;
-    margin-top: 40px;
-    margin-left: 90px;
-    margin-bottom: 0px;
-    background: linear-gradient(to left, rgb(255, 186, 186) 75%, rgb(157, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
 
 
-.hakkindaP{
-    display: inline-block;
-    background: linear-gradient(to left, rgb(255, 223, 223), rgb(150, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-inline: 90px;
-    margin-top: 27px;
-    font-size: 20px;
 
-}
 
 @media (max-width: 600px){
     .hakkinda{
@@ -64,24 +37,24 @@
         margin-inline: 0px;
     }
 
-    .hakkindaBaslik, .hakkindaP, .hakkindaYazi{
+    .baslik, .paragraf, .altbaslik{
         padding: 0;
         margin-inline: 20px;
     }
 
 
 
-    .hakkindaBaslik{
+    .baslik{
         font-size: clamp(1.8rem, 10vw, 5rem);
         padding-top: 30px;
     }
 
     
-    .hakkindaYazi{
+    .altbaslik{
         font-size: clamp(1.2rem, 8vw, 3rem);
     }
 
-    .hakkindaP{
+    .paragraf{
         font-size: clamp(1rem, 6vw, 1rem);
     }
 }

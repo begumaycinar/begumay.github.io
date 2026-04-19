@@ -28,34 +28,7 @@
 .contact-iletisim{
     grid-area: contact;
 }
-.iletisimBaslik{
-    font-size: 60px;
-    margin-inline: 90px;
-    background: linear-gradient(to left, rgb(255, 186, 186), rgb(157, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    position: absolute;
-}
 
-.iletisimYazi{
-    font-size: 40px;
-    margin-top: 40px;
-    margin-left: 90px;
-    margin-bottom: 0px;
-    background: linear-gradient(to left, rgb(255, 186, 186) 75%, rgb(157, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-}
-
-.iletisimP{
-    display: inline-block;
-    background: linear-gradient(to left, rgb(255, 223, 223), rgb(150, 255, 255));
-    -webkit-background-clip: text;
-    -webkit-text-fill-color: transparent;
-    margin-inline: 90px;
-    margin-top: 27px;
-    font-size: 20px;
-}
 
 .label-iletisim{
     grid-area: label;
@@ -71,7 +44,10 @@
     border: none;
     box-shadow: 0 0 10px black;
     border-radius: 3px;
-    width: 13rem;
+    width: 11rem;
+    padding-left: 4px;
+    padding-bottom: 6px;
+    padding-top: 4px;
 }
 
 #iletisim-eposta, #iletisim-tlfn{
@@ -80,15 +56,20 @@
     box-shadow: 0 0 10px black;
     border-radius: 3px;
     width: 100%;
+    padding-left: 4px;
+    padding-bottom: 6px;
+    padding-top: 4px;
 }
 
 #iletisim-ileti{
     width: 100%;
-    height: 10rem;
     background-color: rgba(196, 255, 255, 0.622);
     border: none;
     box-shadow: 0 0 10px black;
     border-radius: 3px;
+    padding-left: 4px;
+    padding-bottom: 100px;
+    padding-top: 4px;
 }
 
 .grup-1{
@@ -107,4 +88,18 @@
     display: flex;
     flex-direction: column;
     gap: 20px;
+}
+
+.baslik, .paragraf{
+    margin-inline: 0px !important;
+}
+
+label{
+    color: whitesmoke;
+}
+
+
+input::placeholder{
+    color: rgb(54, 54, 54);
+    margin-bottom: 70%;
 }

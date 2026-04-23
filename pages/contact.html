@@ -4,8 +4,9 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="../css/mainlayout.css">
-    <link rel="stylesheet" href="../css/contact.css">
     <link rel="stylesheet" href="../css/style.css">
+    <link rel="stylesheet" href="../css/contact.css">
+
     <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -38,12 +39,12 @@
         <div class="grup-1">
             <div>
                 <label for="iletisim-ad">Ad</label>
-                <input type="text" id="iletisim-ad" placeholder="Adınız">
+                <input type="text" id="iletisim-ad" placeholder="Adınız" required>
             </div>
 
             <div>
                 <label for="iletisim-soyad">Soyad</label>
-                <input type="text" id="iletisim-soyad" placeholder="Soyadınız">
+                <input type="text" id="iletisim-soyad" placeholder="Soyadınız" required>
             </div>
         </div>
 
@@ -63,7 +64,10 @@
                 <input type="text" id="iletisim-ileti" placeholder="Elinizden de hiçbir iş gelmiyor maşallah...">
             </div>
         </div>
+        <button id="gonder">Gönder</button>
     </div>
+
+    <script src="../js/contact.js"></script>
 </div>
 
     <footer id="footer-container" class="footer">
@@ -71,5 +75,8 @@
     </footer>
 
     </div>
+
+    
+    <script type="text/javascript" src="../js/gozlukCikar.js" defer></script>
 </body>
 </html>

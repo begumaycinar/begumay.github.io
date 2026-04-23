@@ -38,23 +38,23 @@
     }
 
     .baslik, .paragraf, .altbaslik{
-        padding: 0;
-        margin-inline: 20px;
+        padding: 0 !important;
+        margin-inline: 20px !important;
     }
 
 
 
     .baslik{
-        font-size: clamp(1.8rem, 10vw, 5rem);
-        padding-top: 30px;
+        font-size: clamp(1.8rem, 10vw, 5rem) !important;
+        padding-top: 0px !important;
     }
 
     
     .altbaslik{
-        font-size: clamp(1.2rem, 8vw, 3rem);
+        font-size: clamp(1.2rem, 8vw, 3rem) !important;
     }
 
     .paragraf{
-        font-size: clamp(1rem, 6vw, 1rem);
+        font-size: clamp(1rem, 6vw, 1rem) !important;
     }
 }

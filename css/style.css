@@ -7,6 +7,7 @@ body{
 *{
     box-sizing: border-box;
     font-family: "Oswald";
+    font-size: 16px;
 }
 
 .main{
@@ -106,7 +107,6 @@ body{
     background-image: linear-gradient(rgba(0, 0, 0, 0.4), rgba(176, 29, 29, 0.3), rgba(0, 0, 0, 0.4)), url(../images/sidebar.png);
     background-position: center;
     background-size: contain;
-    border-right: 4px solid black;
     position: relative;
 }
 
@@ -363,12 +363,13 @@ body{
 
 /**YAZI FORMATLARI*/
 
+
 .baslik{
     font-size: 60px;
     margin-top: 60px;
     margin-left: 90px;
-    background: linear-gradient(to left, rgb(255, 186, 186) 75%, rgb(157, 255, 255));
-    -webkit-background-clip: text;
+    background: linear-gradient(to left, rgb(255, 186, 186) 60%, rgb(157, 255, 255));
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
@@ -377,14 +378,14 @@ body{
     margin-top: 40px;
     margin-left: 90px;
     background: linear-gradient(to left, rgb(255, 186, 186) 75%, rgb(157, 255, 255));
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
 }
 
 .paragraf{
     display: inline-block;
     background: linear-gradient(to left, rgb(255, 188, 188), rgb(150, 255, 255));
-    -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     margin-left: 90px;
     margin-top: 27px;
@@ -406,5 +407,11 @@ body.gozluk{
     height: 60px;
     object-fit: cover;
     filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.327));
+
+}
+
+#theme-switch:hover{
+    cursor: pointer;
+    filter: drop-shadow(0 0 5px rgba(255, 255, 255, 0.496));
 
 }

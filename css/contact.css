@@ -28,7 +28,7 @@
 }
 
 .ana{
-    min-height: calc(85vh - 1.5rem);
+    min-height: calc(85vh - 2rem);
     width: 100%;
     overflow-y: scroll;
     scrollbar-color: var(--color-1) transparent;
@@ -41,7 +41,7 @@
     align-items: start;
     padding: clamp(2rem, 5vw, 4rem);
     position: relative;
-    top: 1.5rem;
+    top: 2rem;
 }
 
 
@@ -143,6 +143,7 @@ a{
     line-height: 1.18;
     padding-bottom: 0.12em;
     text-align: left;
+    padding-top: 90px;
 }
 
 .altbaslik{
@@ -285,9 +286,9 @@ input{
 
         grid-template-columns: 1fr;
         grid-template-rows: auto auto;
-        min-height: calc(85vh - 2rem);
+        min-height: calc(85vh - 2.5rem);
         padding: 2rem 1.25rem 3rem;
-        top: 2rem;
+        top: 2.5rem;
         gap: 2.5rem;
     }
 

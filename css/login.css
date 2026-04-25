@@ -15,10 +15,12 @@
 
 .baslik{
     margin-inline: 0;
-    margin-top: 20px;
-    margin-bottom: 35px;
+    margin-top: 0;
+    margin-bottom: 1.75rem;
     text-align: center;
-    font-size: 36px;
+    width: 100%;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.05;
 }
 
 .ana, .login{
@@ -27,12 +29,12 @@
 }
 .login{
     display: block;
-    height: 85vh;
+    min-height: 85vh;
     width: 100%;
     overflow-y: scroll;
     scrollbar-color: var(--color-1) transparent;
     scrollbar-gutter: stable;
-    padding-top: 0;
+    padding: 2rem 1.25rem 3rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -41,43 +43,50 @@
 .wrap{
     backdrop-filter: blur(10px);
     background-color: rgba(255, 255, 255, 0.07);
-    width: 50%;
+    width: min(100%, 34rem);
     justify-content: center;
     height: fit-content;
-    padding: 30px 40px;
+    padding: 2rem 2.25rem 2.25rem;
 
     border-radius: 20px;
     border: 1px solid rgba(255, 255, 255, 0.35);
-    margin-top: 90px;
+    margin-top: 0;
 }
 
 .wrap .input-kutusu{
     width: 100%;
-    height: 50px;
-    margin: 30px 0;
+    min-height: 3rem;
+    margin: 0 0 1rem;
 }
 
 .input-kutusu input{
     width: 100%;
     height: 100%;
-    padding: 20px 45px 20px 20px;
+    padding: 0.75rem 0.9rem;
 
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.35);
     background-color: transparent;
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 .input-kutusu input::placeholder{
     background: linear-gradient(to left, rgb(255, 186, 186) 75%, rgb(157, 255, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    opacity: 0.78;
 }
 .remember-forgot {
     display: flex;
     justify-content: space-between;
-    margin: -15px 0 15px;
-    font-size: 14px;
+    align-items: center;
+    gap: 1rem;
+    margin: 0.35rem 0 1.5rem;
+    font-size: 0.95rem;
+    line-height: 1.4;
 
     background: linear-gradient(to left, rgb(255, 186, 186), rgb(157, 255, 255));
     background-clip: text;
@@ -91,6 +100,7 @@
 
 .remember-forgot a{
     text-decoration: none;
+    font-size: inherit;
 }
 
 .remember-forgot a:hover{
@@ -101,7 +111,8 @@
 
 .wrap button {
     width: 100%;
-    height: 45px;
+    min-height: 3rem;
+    padding: 0.75rem 1rem;
 
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.497);
@@ -110,6 +121,8 @@
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     color: rgb(185, 255, 255);
     transition: 0.2s ease;
+    font-size: 1rem;
+    line-height: 1.3;
 }
 
 .wrap button:hover{
@@ -117,10 +130,11 @@
 }
 
 .wrap .register-link {
-    font-size: 14px;
+    font-size: 0.95rem;
+    line-height: 1.5;
     text-align: center;
-    margin-top: 20px;
-    margin-bottom: 30px;
+    margin-top: 1.25rem;
+    margin-bottom: 0;
     background: linear-gradient(to left, rgb(255, 186, 186), rgb(157, 255, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -137,44 +151,40 @@
 }
 @media (max-width: 600px){
     .login{
-        padding: 0;
+        padding: 1.5rem 1rem 2.5rem;
         margin-inline: 0px;
     }
 
     .baslik, .paragraf, .altbaslik{
         padding: 0 !important;
-        margin-inline: 20px !important;
+        margin-inline: 0 !important;
     }
     
 
     .wrap {
-        padding: 10px 25px 10px 10px ;
-        width: 70%;
+        padding: 1.5rem 1.25rem;
+        width: 100%;
     }
 
     .wrap .input-kutusu{
-        margin: 20px 0;
-    }
-
-
-    
-    .altbaslik{
-        font-size: clamp(1.2rem, 8vw, 3rem) !important;
-    }
-
-    .paragraf{
-        font-size: clamp(1rem, 6vw, 1rem) !important;
+        margin: 0 0 0.9rem;
     }
 }
 
 @media (max-width: 420px) {
 
     .remember-forgot a, .remember-forgot label, .register-link p, .register-link a{
-        font-size: 12px !important;
+        font-size: 0.85rem !important;
     }
 
     .baslik{
-        font-size: 30px;
+        font-size: clamp(2.1rem, 10vw, 2.5rem);
+    }
+
+    .remember-forgot{
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 0.6rem;
     }
     
 }

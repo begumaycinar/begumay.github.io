@@ -1,3 +1,5 @@
+/**NAVBAR ÇİZGİSİ*/
+
 .updates-nav, .main-nav, .about-nav, .login-nav{
     text-decoration: none !important;
 }
@@ -6,6 +8,9 @@
     text-decoration: rgb(174, 18, 18) underline 3.5px !important;
 }
 
+
+/*body*/
+
 *{
     margin: 0;
     padding: 0;
@@ -13,11 +18,13 @@
 
 .paragraf{
     width: 80%;
+    max-width: 34rem;
+    line-height: 1.7;
+    text-wrap: pretty;
 }
 
-.iletisim{
-    display: block;
-    height: 85vh;
+.ana{
+    min-height: 85vh;
     width: 100%;
     overflow-y: scroll;
     scrollbar-color: var(--color-1) transparent;
@@ -26,33 +33,136 @@
     grid-template-areas: 
     "label contact";
     grid-template-columns: 1fr 1fr;
+    gap: clamp(2rem, 5vw, 5rem);
+    align-items: start;
+    padding: clamp(2rem, 5vw, 4rem);
 }
 
+
+/**SAĞ*/
 
 .contact-iletisim{
     grid-area: contact;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-self: stretch;
+    margin-bottom: 10px;
+    gap: 1.5rem;
+}
+
+a{
+    text-decoration: none;
+    font-size: 1.125rem;
+    line-height: 1.4;
+    display: flex;
+    align-items: center;
+    gap: 7px;
+    margin-top: 7px;
+    color: aliceblue;
+    width: fit-content;
+}
+
+.insta-link{
+    transition: 0.3s ease;
+}
+
+.insta-link:hover{
+    filter: drop-shadow(3px 3px 5px rgba(255, 255, 255, 0.29));
+    background: linear-gradient(to right, rgb(5, 10, 230) 10%,
+                                          rgb(131, 58, 180),
+                                          rgb(225, 48, 108),
+                                          rgb(247, 119, 55), 
+                                          rgb(225, 220, 128));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(5, 10, 230);
+}
+
+.dc-link{
+    transition: 0.3s ease;
+}
+
+.dc-link:hover{
+    color: #5865F2;
+    filter: drop-shadow(0px 3px 3px rgba(240, 248, 255, 0.2));
+}
+
+.yt-link{
+    transition: 0.3s ease;
+}
+
+.yt-link:hover{
+    background: linear-gradient(to right, rgb(255, 0, 0),
+                                          rgb(255, 197, 197));
+    filter: drop-shadow(0px 3px 3px rgba(240, 248, 255, 0.2));
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(255, 0, 0);
+}
+
+.mail-link{
+    transition: 0.3s ease;
+}
+
+.mail-link:hover{
+    background: linear-gradient(to right, rgb(88, 22, 255) 10%,
+                                          rgb(187, 105, 255));
+    filter: drop-shadow(0px 3px 3px rgba(240, 248, 255, 0.2));
+
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+    color: rgb(88, 22, 255);
+}
+
+.wrap{
+    display: flex;
+    justify-content: space-between;
+}
+
+
+.svg{
+    width: 26px ;
+    height: auto;
+    transition: 0.3s ease;
+
 }
 
 .baslik{
-    margin-top: 100px;
+    margin: 0;
+    width: 80%;
+    max-width: 34rem;
+    font-size: clamp(2.5rem, 5vw, 4rem);
+    line-height: 1.18;
+    padding-bottom: 0.12em;
+    text-align: left;
 }
 
+.altbaslik{
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
+    line-height: 1.22;
+    padding-bottom: 0.1em;
+    text-align: left;
+}
 
 .label-iletisim{
     grid-area: label;
     display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: center;
+    justify-content: flex-start;
+    align-items: flex-start;
     margin-bottom: 10px;
-    gap: 24px;
+    gap: 1.5rem;
 }
 
 #iletisim-ad, #iletisim-soyad{
-    padding-left: 4px;
-    padding-bottom: 6px;
-    padding-top: 4px;
-
+    width: 100%;
+    min-height: 2.9rem;
+    padding: 0.75rem 0.9rem;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.35);
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
@@ -67,16 +177,14 @@
     box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
     backdrop-filter: blur(10px);
     width: 100%;
-    padding-left: 4px;
-    padding-bottom: 6px;
-    padding-top: 4px;
+    min-height: 2.9rem;
+    padding: 0.75rem 0.9rem;
 }
 
 #iletisim-ileti{
     width: 100%;
-    padding-left: 4px;
-    padding-bottom: 100px;
-    padding-top: 4px;
+    min-height: 8.5rem;
+    padding: 0.9rem;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.35);
     background-color: rgba(255, 255, 255, 0.151);
@@ -84,11 +192,18 @@
     backdrop-filter: blur(10px);
 }
 
-.grup-1{
+.grup-1, .grup-2{
     display: flex;
     flex-direction: column;
-    gap: 5px;
+    gap: 0.9rem;
     width: 80%;
+    max-width: 34rem;
+}
+
+.contact-iletisim > .paragraf,
+.label-iletisim > .paragraf{
+    margin-top: -0.2rem;
+    margin-bottom: 0.2rem;
 }
 
 
@@ -96,15 +211,9 @@
 .grup-2 > div{
     display: flex;
     flex-direction: column;
-    gap: 8px;
+    gap: 0.45rem;
 }
 
-.grup-2{
-    display: flex;
-    flex-direction: column;
-    gap: 20px;
-    width: 80%;
-}
 
 .baslik, .paragraf{
     margin-inline: 0px !important;
@@ -112,20 +221,29 @@
 
 label{
     color: whitesmoke;
+    font-size: 0.95rem;
+    letter-spacing: 0.02em;
+    line-height: 1.3;
 }
 
 
 input::placeholder{
-    margin-bottom: 70%;
     background: linear-gradient(to left, rgb(255, 186, 186) 60%, rgb(157, 255, 255));
     -webkit-background-clip: text;
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    opacity: 0.78;
+}
+
+input{
+    color: white;
+    font-size: 1rem;
+    line-height: 1.5;
 }
 
 #gonder{
-    width: 35%;
-    border-radius: 3px;
+    width: 80%;
+    max-width: 14rem;
     transition: .1s ease;
     border-radius: 10px;
     border: 1px solid rgba(255, 255, 255, 0.497);
@@ -134,6 +252,10 @@ input::placeholder{
     color: rgb(185, 255, 255);
     transition: 0.2s ease;
     background-color: rgba(255, 255, 255, 0.151);
+    min-height: 3rem;
+    padding: 0.75rem 1rem;
+    font-size: 1rem;
+    text-align: center;
 }
 
 #gonder:active{
@@ -146,23 +268,32 @@ input::placeholder{
 }
 
 
+
+
 @media  (max-width: 600px){
 
-    .iletisim{
+    .ana{
         grid-template-areas:
         "label"
         "contact";
 
         grid-template-columns: 1fr;
-        grid-template-rows: 1fr 1fr;
+        grid-template-rows: auto auto;
+        padding: 2rem 1.25rem 3rem;
+        gap: 2.5rem;
     }
 
     .baslik{
-        margin-top: 30px;
+        margin-top: 0;
     }
 
-    .grup-1, .grup-2, .paragraf{
+    .grup-1, .grup-2, .paragraf, .baslik{
         width: 100%;
+    }
+
+    #gonder{
+        width: 100%;
+        max-width: none;
     }
 
     

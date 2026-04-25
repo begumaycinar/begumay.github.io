@@ -44,3 +44,8 @@ body, *{
 .paragraf > sub{
     color: rgba(255, 0, 0, 0.262);
 }
+
+.paragraf{
+    margin-bottom: 20px;
+    margin-top: 0;
+}

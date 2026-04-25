@@ -51,14 +51,14 @@
     grid-template-areas:
     "forum forum ciftlik ciftlik"
     "blog makale oyun magaza";
-    grid-template-columns: repeat(4, minmax(150px, 220px));
-    gap: clamp(1.25rem, 3vw, 2.5rem);
+    grid-template-columns: repeat(4, minmax(150px, 200px));
+    gap: clamp(1rem, 2vw, 1.75rem);
     padding: 1.5rem;
     box-sizing: border-box;
     justify-content: center;
     align-content: center;
-    padding-top: clamp(4rem, 10vw, 10.5rem);
-    padding-bottom: clamp(4rem, 10vw, 10.5rem);
+    padding-top: clamp(3.5rem, 5vw, 6rem);
+    padding-bottom: clamp(3.5rem, 5vw, 6rem);
 }
 
 .forum {
@@ -149,7 +149,7 @@
 .baslik-ana, .baslik-ana > a{
     color: white;
     font-family: "Jersey 10", system-ui;
-    font-size: clamp(1.8rem, 8vw, 4rem);
+    font-size: clamp(1.8rem, 5vw, 3.2rem);
     text-shadow: 5px 0px 10px black;
     font-weight: lighter;
     text-decoration: none;
@@ -185,9 +185,9 @@
         "blog makale"
         "oyun magaza";
         justify-content: center;
-        grid-template-columns: repeat(2, minmax(140px, 220px));
-        gap: 1.5rem;
-        padding-top: 6rem;
+        grid-template-columns: repeat(2, minmax(140px, 200px));
+        gap: 1.25rem;
+        padding-top: 5rem;
     }
 
 }

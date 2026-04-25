@@ -57,6 +57,7 @@
     box-sizing: border-box;
     justify-content: center;
     align-content: center;
+    height: 85vh;
     padding-top: clamp(3.5rem, 5vw, 6rem);
     padding-bottom: clamp(3.5rem, 5vw, 6rem);
 }

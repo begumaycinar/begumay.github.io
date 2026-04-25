@@ -21,6 +21,10 @@
     max-width: 34rem;
     line-height: 1.7;
     text-wrap: pretty;
+    background: linear-gradient(to left, rgba(255, 188, 188, 0.7), rgba(150, 255, 255, 0.7));
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+
 }
 
 .ana{
@@ -253,13 +257,13 @@ input{
     transition: 0.2s ease;
     background-color: rgba(255, 255, 255, 0.151);
     min-height: 3rem;
-    padding: 0.75rem 1rem;
+    padding: 0.65rem .9rem;
     font-size: 1rem;
     text-align: center;
 }
 
 #gonder:active{
-        background-color: rgba(255, 80, 80, 0.779);
+        background-color: rgba(255, 80, 80, 0.879);
 }
 
 #gonder:hover{

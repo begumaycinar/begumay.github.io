@@ -11,37 +11,231 @@
     grid-template-rows: 100px 50px 1fr auto;
 }
 
+*{
+    margin: 0;
+    padding: 0;
+}
+
+.paragraf{
+    margin-inline: 20px;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.blog-baslik{
+    font-family: "Jersey 10", system-ui;
+    font-size: clamp(1rem, 3vw, 2.5rem);
+    color: #fff8f8;
+    filter: drop-shadow(0px 0px 2px rgba(255, 181, 181, 0.556));
+    text-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+    font-weight: 300;
+    margin: 20px;
+    padding-bottom: 0;
+    margin-bottom: 0;
+}
+
 .b-log{
     background-image: radial-gradient(rgba(252, 34, 34, 0.5), rgba(0, 0, 0, .5)), url(../images/anaArkaplan.png);
     background-position: center;
     background-size: cover;
     width: 100%;
+    overflow: auto;
+    scrollbar-color: var(--color-1) transparent;
+    scrollbar-gutter: stable;
 }
 
 .b-baslik{
     display: flex;
     justify-content: center;
     background: url(../images/blogKapak.png);
-    mask-image: linear-gradient(
-         to bottom,
-    rgb(255, 255, 255),
-    rgba(255, 255, 255, 0.7),
-    rgba(255, 255, 255, 0.6),
-    rgba(255, 255, 255, 0.1),
-    rgba(255, 255, 255, 0)
-        );
-    mask-size: 25% 100%;
-    width: 100%;
-    height: 600px;
+    background-size: cover;
+    background-position: top;
+    height: 350px;
+    mask-image: linear-gradient(to bottom, black 70%, transparent);
 }
+
+hr{
+    background: linear-gradient(to left, #171515, rgb(63, 226, 255), #171515); 
+    border: none; 
+    height: 3px;
+    margin: 0;
+}
+
 
 .baslik-blog{
     font-family: "Jersey 10", system-ui;
-    font-size: 200px;
+    font-size: clamp(5rem, 16vw, 12.5rem);
+    color: #fff8f8;
+    text-shadow: 0 10px 24px rgba(0, 0, 0, 0.45);
+    padding-bottom: 20px;
+}
+
+/*bloglarım*/
+
+.altbaslik-blog{
+    font-family: "Jersey 10", system-ui;
+    font-size: clamp(2rem, 8vw, 6rem);
     margin-inline: 0;
+    z-index: 2;
+    color: #fff8f8;
+    text-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    padding-left: 20px;
+    text-decoration: underline;
+    margin-bottom: 30px;
+}
+
+
+.bloglarim{
+    backdrop-filter: blur(2px);
+    width: 100%;
+    padding-bottom: 30px;
+    height: auto;
+}
+
+.altblog{
+    display: flex;
+    gap: 10px;
+    margin-bottom: 0;
+}
+
+.ekle{
+    width: 100px;
+    height: 100px;
+    font-size: 100px;
+    display: flex;
     justify-content: center;
     align-items: center;
-    margin-top: 30px;
+
+    backdrop-filter: blur(10px);
+    background-image: radial-gradient(rgba(220, 20, 20, 0.355), rgba(0, 0, 0, 0.251));
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: transparent;
+    color: white;
+
+    transition: .2s ease;
+}
+
+.ekle:hover{
+    background-color: rgba(203, 35, 35, 0.844);
+
+}
+
+h3{
+    margin: 0;
+    padding: 0;
+}
+
+.yaziwrap{
+    padding-block: 30px;
+    margin-left: 20px;
+    width: 80%;
+    backdrop-filter: blur(10px);
+    background-image: radial-gradient(rgba(220, 20, 20, 0.355), rgba(0, 0, 0, 0.251));
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    margin-bottom: 0;
+}
+
+.blog-yazi::placeholder{
+    color: rgba(0, 0, 0, 0.552);
+}
+
+
+.blog-yazi{
+    resize: none;
+    margin-left: 20px;
+    width: 80%;
+    height: 370px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    background-color: rgb(255, 255, 255);
+    background-image: radial-gradient(rgba(255, 37, 37, 0.162), rgba(122, 122, 122, 0.184));
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    padding-left: 10px;
+}
+
+/*KEŞFET*/
+
+.otekiler{
+    gap: 30px;
+    height: 500px;
+}
+
+.kesfet-arama{
+    width: 60%;
+    height: 50px;
+    margin-block: 25px;
+    margin-left: 10px;
+    border-radius: 20px;
+    background-color: rgba(90, 0, 0, 0.362);
+    border: 1px solid rgba(255, 255, 255, 0.349);
+}
+
+.altbaslik-otekiler{
+    font-family: "Jersey 10", system-ui;
+    font-size: clamp(2rem, 8vw, 6rem);
+    margin-inline: 0;
+    z-index: 2;
+    color: #fff8f8;
+    text-shadow: 0 10px 24px rgba(0, 0, 0, 0.35);
+    padding-left: 20px;
+    padding-top: 30px;
+    text-decoration: underline;
+}
+
+.bloglar{
+    width: 100%;
+    height: 900px;
+    padding-top: 30px;
+}
+
+.ornekblog{
+    width: 30%;
+    height: 305px;
+    border-radius: 10px;
+    border: 1px solid rgba(255, 255, 255, 0.35);
+    backdrop-filter: blur(10px);
+    background-image: radial-gradient(rgba(255, 37, 37, 0.162), rgba(122, 122, 122, 0.184));
+    box-shadow: 0px 5px 5px rgba(0, 0, 0, 0.2);
+    font-size: 1rem;
+    margin-left: 30px;
+    overflow: auto;
+}
+
+
+
+
+.arama-wrap{
+    display: flex;
+    gap: 2px;
+}
+
+.svg{
+    color: rgb(255, 255, 255);
+    width: 32px;
+    height: auto;
+    margin-left: 20px;
+}
+
+@media (max-width: 800px) {
+    
+}
+@media (max-width: 700px){
+    .b-baslik{
+        height: 240px;
+    }
+
+    .baslik-blog{
+        margin-top: 2.5rem;
+    }
+
+    .ornekblog{
+        width: auto;
+        margin-inline: 20px;
+    }
+
 }
 
 

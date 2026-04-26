@@ -12,8 +12,8 @@ body{
 
 *{
     box-sizing: border-box;
-    font-family: "Oswald";
-    font-size: 16px;
+    font-family: "Jersey 10", system-ui;
+    font-size: 20px;
 }
 
 .main{
@@ -243,7 +243,6 @@ body{
     --accent-color: rgb(174, 18, 18);
 }
 
-
 .navbar-a{
     grid-area: nav;
     background-color: var(--color-1);
@@ -377,6 +376,8 @@ body{
     background: linear-gradient(to left, rgb(255, 186, 186) 60%, rgb(157, 255, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+    font-family: "Jersey 10", system-ui;
+    font-size: clamp(3.5rem, 6vw, 6rem);
 }
 
 .altbaslik{
@@ -386,6 +387,10 @@ body{
     background: linear-gradient(to left, rgb(255, 186, 186) 75%, rgb(157, 255, 255));
     background-clip: text;
     -webkit-text-fill-color: transparent;
+
+    font-family: "Jersey 10", system-ui;
+    font-weight: 200;
+    font-size: clamp(1.8rem, 3vw, 2.5rem);
 }
 
 .paragraf{
@@ -396,6 +401,9 @@ body{
     margin-left: 90px;
     margin-top: 27px;
     font-size: 20px;
+
+    font-family: "Jersey 10", system-ui;
+    font-weight: 100;
 }
 
 /*gözlük tuşu*/

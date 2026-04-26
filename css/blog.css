@@ -58,7 +58,7 @@
 }
 
 hr{
-    background: linear-gradient(to left, #171515, rgb(63, 226, 255), #171515); 
+    background: linear-gradient(to left, transparent, rgba(255, 80, 80, 0.378), transparent); 
     border: none; 
     height: 3px;
     margin: 0;

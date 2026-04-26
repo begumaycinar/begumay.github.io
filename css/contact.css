@@ -31,7 +31,6 @@
 .ana{
     height: 1fr;
     width: 100%;
-    overflow: auto;
     scrollbar-color: var(--color-1) transparent;
     scrollbar-gutter: stable;
     display: grid;
@@ -54,6 +53,8 @@
     justify-self: stretch;
     margin-bottom: 10px;
     gap: 1.5rem;
+    height: 100%;
+    overflow: auto;
 }
 
 a{
@@ -135,15 +136,15 @@ a{
 }
 
 .baslik{
-    margin: 0;
     width: 80%;
     max-width: 34rem;
     font-size: clamp(3.5rem, 6vw, 6rem);
     line-height: 1.18;
     padding-bottom: 0.12em;
     text-align: left;
-    padding-top: 100px;
+    padding-top: 0;
     font-family: "Jersey 10", system-ui;
+    margin-top: 0;
 }
 
 .altbaslik{
@@ -166,6 +167,8 @@ a{
     align-items: flex-start;
     margin-bottom: 10px;
     gap: 1.5rem;
+    height: 100%;
+    overflow: auto;
 }
 
 #iletisim-ad, #iletisim-soyad{
@@ -215,6 +218,11 @@ a{
     margin-bottom: 0.2rem;
 }
 
+.gerek{
+    color: rgb(183, 6, 6);
+    filter: drop-shadow(20px);
+}
+
 
 .grup-1 > div,
 .grup-2 > div{
@@ -233,6 +241,7 @@ label{
     font-size: 0.95rem;
     letter-spacing: 0.02em;
     line-height: 1.3;
+    display: flex;
 }
 
 
@@ -292,10 +301,23 @@ input{
         padding: 2rem 1.25rem 3rem;
         top: 2.5rem;
         gap: 2.5rem;
+        overflow: auto
     }
 
-    .baslik{
-        margin-top: 0;
+    .label-iletisim, .contact-iletisim{
+        overflow: visible;
+    }
+
+    .label-iletisim{
+        margin-top: 770px;
+        margin-bottom: 0;
+    }
+    .label-iletisim .baslik{
+        padding-top: 10px;
+    }
+
+    .contact-iletisim .baslik{
+        padding-top: 50px;
     }
 
     .grup-1, .grup-2, .paragraf, .baslik{
@@ -308,4 +330,16 @@ input{
     }
 
     
+}
+
+
+@media (max-width: 450px){
+    .label-iletisim .baslik{
+        padding-top: 100px;
+    }
+
+}@media (max-width: 380px){
+    .label-iletisim .baslik{
+        padding-top: 140px;
+    }
 }

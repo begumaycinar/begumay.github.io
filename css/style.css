@@ -340,6 +340,8 @@ body{
 
 /**FOOTER*/
 
+
+
 .footer-comp {
     grid-area: foot;
     background-color: #171515;
@@ -350,6 +352,12 @@ body{
 .footerYazi{
     color: rgb(129, 129, 129);
     margin: 1px;
+    font-size: 14px;
+    font-family: "Oswald" !important;
+}
+
+strong, b, i{
+    font-family: "Oswald";
     font-size: 14px;
 }
 /* Navbar visibility override */

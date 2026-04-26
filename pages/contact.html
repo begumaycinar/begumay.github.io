@@ -90,26 +90,27 @@
             </div>
 
             <div>
-                <label for="iletisim-soyad">Soyad <p class="gerek">isteğe bağlı</p></label>
-                <input type="text" id="iletisim-soyad" placeholder="Soyadınız" required>
+                <label for="iletisim-soyad">Soyad</label>
+                <input type="text" id="iletisim-soyad" placeholder="Soyadınız">
             </div>
         </div>
 
         <div class="grup-2">
             <div>
-                <label for="iletisim-eposta">E-Güvecin</label>
-                <input type="text" id="iletisim-eposta" placeholder="birileri@eposta.com">
+                <label for="iletisim-eposta">E-Güvecin <p class="gerek">*</p></label>
+                <input type="email" id="iletisim-eposta" placeholder="birileri@eposta.com" required>
             </div>
 
             <div>
                 <label for="iletisim-tlfn">İple Bağlanmış Konserve Kutusu</label>
-                <input type="text" id="iletisim-tlfn" placeholder="(isterseniz) Herhangi bir iletişim adresi">
+                <input type="text" id="iletisim-tlfn" placeholder="Herhangi bir iletişim adresi">
             </div>
 
             <div>
-                <label for="iletisim-ileti">İleti</label>
-                <input type="text" id="iletisim-ileti" placeholder="Elinizden de hiçbir iş gelmiyor maşallah...">
+                <label for="iletisim-ileti">İleti <p class="gerek">*</p></label>
+                <input type="text" id="iletisim-ileti" placeholder="Elinizden de hiçbir iş gelmiyor maşallah..." required>
             </div>
+            <p class="gerek">* doldurulması gerekli bilgilerdir</p>
         </div>
         <button id="gonder">Gönder</button>
     </div>

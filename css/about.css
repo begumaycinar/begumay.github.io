@@ -7,19 +7,15 @@
     padding: 0;
 }
 
-.hakkinda{
-    display: block;
-    height: 80vh;
+.ana{
     width: 100%;
+    height: 80vh;
+    display: block;
     overflow-y: scroll;
     scrollbar-color: var(--color-1) transparent;
     scrollbar-gutter: stable;
     padding-top: 0;
-}
-
-.ana{
-    width: 100%;
-    height: 80vh;
+    padding-inline: 40px;
 }
 
 
@@ -28,6 +24,10 @@
 }
 
 
+
+.baslik, .altbaslik, .paragraf{
+    margin-inline: 0;
+}
 
 
 
@@ -39,7 +39,7 @@
 
     .baslik, .paragraf, .altbaslik{
         padding: 0 !important;
-        margin-inline: 20px !important;
+        margin-inline: 0px !important;
     }
 
 
@@ -47,6 +47,7 @@
     .baslik{
         font-size: clamp(1.8rem, 10vw, 5rem) !important;
         padding-top: 0px !important;
+
     }
 
     

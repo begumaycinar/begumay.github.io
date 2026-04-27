@@ -195,8 +195,21 @@
 
 @media (max-width: 600px) {
     .ana{
-        grid-template-columns: repeat(2, minmax(120px, 1fr));
+        grid-template-columns: repeat(2, minmax(100px, 1fr));
         padding: 5rem 1rem;
     }
 
+
+    .container {
+    grid-template-areas: 
+        "header header"
+        "nav nav"
+        "side ana"
+        "foot foot";
+    grid-template-columns: 55px 1fr;
+    grid-template-rows: 100px 40px 1fr auto;
 }
+}
+
+    
+
